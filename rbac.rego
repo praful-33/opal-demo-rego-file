@@ -22,17 +22,17 @@ package app.rbac
 # import data.utils
 
 # By default, deny requests
-default allow = true
+default allow = false
 
 # Allow admins to do anything
 allow {
 	user_is_admin
 }
 
-# Allow bob to do anything
-#allow {
-#	input.user == "praful"
-#}
+# Allow praful to do anything
+allow {
+	input.user == "praful"
+}
 
 # you can ignore this rule, it's simply here to create a dependency
 # to another rego policy file, so we can demonstate how to work with
