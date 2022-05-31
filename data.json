@@ -20,6 +20,13 @@
         "country": "US",
         "ip": "8.8.8.8"
       }
+    },
+    "bob": {
+      "roles": ["employee", "billing", "viewer"],
+      "location": {
+        "country": "US",
+        "ip": "8.8.8.8"
+      }
     }
   },
   "role_permissions": {
